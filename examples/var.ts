@@ -1,4 +1,4 @@
-function f(shouldInitialize: boolean) {
+function f(shouldInitialize: boolean): number {
   if (shouldInitialize) {
     var x = 10;
   }
@@ -6,5 +6,5 @@ function f(shouldInitialize: boolean) {
   return x;
 }
 
-f(true); // returns '10'
-f(false); // returns 'undefined'
+console.log(f(true)); // returns '10'
+console.log(f(false)); // returns 'undefined'
